@@ -1,0 +1,12 @@
+<div>
+    <button type="button" class="btn btn-primary"
+        (click) = "onButtonClick()"
+    >Display Details</button>
+    <p *ngIf="display">You can see me now!</p>
+    <ul>
+        <li *ngFor="let i of btnClicks"
+        [ngStyle] = "{backgroundColor: i >= 5 ? 'blue' : 'transparent'}"
+        [ngClass] = "{paragraphColor: i >= 5}"
+    >{{ i }}</li>
+    </ul>
+</div>
