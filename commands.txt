@@ -1,0 +1,8 @@
+## Creating App Components
+// header component was added manually
+ng generate component recipes --skipTests true // for Angular 6, --spec false
+ng generate component recipes/recipe-list --skipTests true
+ng generate component recipes/recipe-detail --skipTests true
+ng generate component recipes/recipe-list/recipe-item --skipTests true
+ng g c shopping-list --skipTests true
+ng g c shopping-list/shopping-edit --skipTests true
